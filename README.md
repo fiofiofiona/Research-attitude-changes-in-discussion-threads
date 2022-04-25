@@ -6,10 +6,10 @@ The code is written in Python 3.8.12 and all of its dependencies can be installe
 pip install -r requirements.txt
 ```
 ### Data accessing and processing
-You can run codes in sample.ipynb to access Reddit data and store in csv files, as the 3 different csv files stored in data directory.\
+You can run codes in `sample.ipynb` to access Reddit data and store in csv files, as the 3 different csv files stored in data directory.
 
 ### Opinion polarity and diversity of environments
-To conduct sentiment analysis on posts from each subreddit, run post_VADER.ipynb to implement VADER and analyze the sentiment of posts.\
+To conduct sentiment analysis on posts from each subreddit, run `post_VADER.ipynb` to implement VADER and analyze the sentiment of posts.\
 With sentiment analysis results, you can obtain the percentages of positive, neutral and negative posts in each subreddit, which allow differentiation among three subreddits and better confirm the difference of environments' opinion polarity and diversity.
 
 ![subreddit](data/subreddit_percentage.png)
