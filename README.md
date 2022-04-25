@@ -10,6 +10,9 @@ You can run codes in sample.ipynb to access Reddit data and store in csv files, 
 \
 To conduct sentiment analysis on posts from each subreddit, run post_VADER.ipynb to implement VADER and analyze the sentiment of posts.\
 With sentiment analysis results, you can obtain the percentages of positive, neutral and negative posts in each subreddit, which allow differentiation among three subreddits and better confirm the difference of environments' opinion polarity and diversity.\
+
+![subreddit](data/subreddit_percentage.png)
+
 r/conspiracy, as expected, shows the highest percentage of negative posts about covid-19 vaccine, and r/Coronavirus contains most neutral posts.\
 However, positive posts do not have the highest percentage or count in r/vaxxhappened, which may because that one of the main topics in this subreddit is attacking anti-vaccine supporters, or anti-vaxxers, where they may not present explicit sentiment in favor of covid-19 vaccine.\
 Overall, the finding of VADER results on posts helps confirm that it is reasonable to assume r/conspiracy is a like-minded anti-vaccine community, and r/Coronavirus is a diverse environment.\
