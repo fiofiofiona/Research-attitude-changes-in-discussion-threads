@@ -9,7 +9,7 @@ pip install -r requirements.txt
 You can run codes in sample.ipynb to access Reddit data and store in csv files, as the 3 different csv files stored in data directory.\
 \
 To conduct sentiment analysis on posts from each subreddit, run post_VADER.ipynb to implement VADER and analyze the sentiment of posts.\
-With sentiment analysis results, you can obtain the percentages of positive, neutral and negative posts in each subreddit, which allow differentiation among three subreddits and better confirm the difference of environments' opinion polarity and diversity.\
+With sentiment analysis results, you can obtain the percentages of positive, neutral and negative posts in each subreddit, which allow differentiation among three subreddits and better confirm the difference of environments' opinion polarity and diversity.
 
 ![subreddit](data/subreddit_percentage.png)
 
