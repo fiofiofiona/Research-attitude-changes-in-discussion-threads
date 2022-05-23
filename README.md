@@ -1,7 +1,7 @@
 # Supplemental Code
 The code and data in this repository is for reproducing research workflow and results of MACS30200 course project "Changes of sentiment strength and subjectivity in COVID-19 vaccine discourse on Reddit".\
 \
-The code is written in Python 3.8.12 and all of its dependencies can be installed by running the following in the terminal (with the `requirements.txt` file included in this repository):
+The code is written in Python 3.8.12 and all of its dependencies can be installed by running the following in the terminal (with the [requirements.txt](https://github.com/macs30200-s22/replication-materials-fiofiofiona/blob/master/requirements.txt) file included in this repository):
 ```
 pip install -r requirements.txt
 ```
