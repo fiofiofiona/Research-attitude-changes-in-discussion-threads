@@ -6,10 +6,15 @@ The code is written in Python 3.8.12 and all of its dependencies can be installe
 pip install -r requirements.txt
 ```
 ### Data accessing and processing
-You can run codes in `sample.ipynb` to access Reddit data and store in csv files, as the 3 different csv files stored in data directory.
+To collect posts and comments from Reddit, run the following notebooks (recommend running on Google Colab because it can take more than 1 hour for each):
+* [Scrape r/conspiracy](https://github.com/macs30200-s22/replication-materials-fiofiofiona/blob/master/conspiracy.ipynb)
+* [Scrape r/Coronavirus](https://github.com/macs30200-s22/replication-materials-fiofiofiona/blob/master/covid.ipynb)
+* [Scrape r/vaxxhappened](https://github.com/macs30200-s22/replication-materials-fiofiofiona/blob/master/vaxx.ipynb)
+
+After running the three notebooks, you should be able to access posts and comments data files on either your local machine or Google Drive (if you mount at your Drive folder). Those are big files even after compression, so they can't be uploaded to github. 
 
 ### Opinion polarity and diversity of environments
-To conduct sentiment analysis on posts from each subreddit, run `post_VADER.ipynb` to implement VADER and analyze the sentiment of posts.\
+To conduct sentiment analysis on posts from each subreddit, run [post_VADER.ipynb](https://github.com/macs30200-s22/replication-materials-fiofiofiona/blob/master/post_VADER.ipynb) to implement VADER and analyze the sentiment of posts.\
 With sentiment analysis results, you can obtain the percentages of positive, neutral and negative posts in each subreddit, which allow differentiation among three subreddits and better confirm the difference of environments' opinion polarity and diversity.
 
 ![subreddit](data/subreddit_percentage.png)
@@ -20,6 +25,7 @@ Overall, the finding of VADER results on posts helps confirm that it is reasonab
 Although r/vaxxhappened has relatively weak evidence of being a like-minded pro-vaccine community, general attitude in this subreddit is against anti-vaccine, and further analysis (eg. ngram) may be implemented to better identify the sentiment of posts in r/vaxxhappened.\
 
 ### Changes in sentiment strengths in each subreddit
+To conduct sentiment analysis on comments, run [comment_sentiment.ipynb](https://github.com/macs30200-s22/replication-materials-fiofiofiona/blob/master/comment_sentiment.ipynb) to generate sentiment scores from TextBlob and go through statistical analysis. Note that the data folders and .jar file that support running [SentiStrength](http://sentistrength.wlv.ac.uk/) are authorized by the author, Dr. Thelwall, and therefore should not be uploaded for public access. Comments with sentiment scores will be uploaded after compression or available on Google Drive (link to be provided).\
 After assessing sentiment strengths of all comments, changes were measured along two axes: temporal change and variability. Temporal change was calculated from |initial 10% comments' sentiment strengths - final 10% comments' sentiment strengths| in a discussion thread sorted by chronological order; variability was calculated from |minimum 10% comments' sentiment strengths - maximum 10% comments' sentiment strengths| in a discussion thread sorted by individual sentiment strength scores. The distributions of changes in sentiment strenths were similar across three subreddits, as shown below. 
 
 ![sentiment change distribution](data/senti_strength_change_hist.png)
