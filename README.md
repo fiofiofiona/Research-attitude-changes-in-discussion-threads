@@ -41,6 +41,13 @@ The following heatmap below presents the correlation coefficients between discus
 
 ![correlation](data/all_correlation.png)
 
+### Qualitative analysis
+------
+The following bar chart shows the top 20 bigram frequency from the comments with strongest sentiment in each subreddit. We can see that the most frequently mentioned phrases differed a lot across subreddits but supported the main attitude of each subreddit.
+
+![barchart](data/bigram_strong_senti.png)
+
+
 \
-Cite as:\
+**Cite as:**\
 Lee, F. Changes of sentiment strength and subjectivity in COVID-19 vaccine discourse on Reddit, (2022), GitHub repository, https://github.com/macs30200-s22/replication-materials-fiofiofiona
