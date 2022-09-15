@@ -1,22 +1,22 @@
 # Supplemental Code
 The code and data in this repository is for reproducing research workflow and results of the research project "**Attitude changes along discussion threads in online COVID-19 vaccine discourse**".\
 \
-The code is written in Python 3.8.12 and all of its dependencies can be installed by running the following in the terminal (with the [requirements.txt](https://github.com/macs30200-s22/replication-materials-fiofiofiona/blob/master/requirements.txt) file included in this repository):
+The code is written in Python 3.8.12 and all of its dependencies can be installed by running the following in the terminal (with the [requirements.txt](https://github.com/fiofiofiona/Research-attitude-changes-in-discussion-threads/blob/master/requirements.txt) file included in this repository):
 ```
 pip install -r requirements.txt
 ```
 ### Data accessing and processing
 ------
 To collect posts and comments from Reddit, run the following notebooks (recommend running on Google Colab because it can take more than 1 hour for each):
-* [Scrape r/conspiracy](https://github.com/macs30200-s22/replication-materials-fiofiofiona/blob/master/conspiracy.ipynb)
-* [Scrape r/Coronavirus](https://github.com/macs30200-s22/replication-materials-fiofiofiona/blob/master/covid.ipynb)
-* [Scrape r/vaxxhappened](https://github.com/macs30200-s22/replication-materials-fiofiofiona/blob/master/vaxx.ipynb)
+* [Scrape r/conspiracy](https://github.com/fiofiofiona/Research-attitude-changes-in-discussion-threads/blob/master/conspiracy.ipynb)
+* [Scrape r/Coronavirus](https://github.com/fiofiofiona/Research-attitude-changes-in-discussion-threads/blob/master/covid.ipynb)
+* [Scrape r/vaxxhappened](https://github.com/fiofiofiona/Research-attitude-changes-in-discussion-threads/blob/master/vaxx.ipynb)
 
 After running the three notebooks, you should be able to access posts and comments data files on either your local machine or Google Drive (if you mount at your Drive folder). Those are big files even after compression, so they can't be uploaded to github. 
 
 ### Opinion polarity and diversity of environments
 ------
-**Run [post_VADER.ipynb](https://github.com/macs30200-s22/replication-materials-fiofiofiona/blob/master/post_VADER.ipynb)**\
+**Run [post_VADER.ipynb](https://github.com/fiofiofiona/Research-attitude-changes-in-discussion-threads/blob/master/post_VADER.ipynb)**\
 To conduct sentiment analysis on posts from each subreddit, run the above notebook to implement VADER and analyze the sentiment of posts.\
 With sentiment analysis results, you can obtain the percentages of positive, neutral and negative posts in each subreddit, which allow differentiation among three subreddits and better confirm the difference of environments' opinion polarity and diversity.
 
@@ -29,7 +29,7 @@ Although r/vaxxhappened has relatively weak evidence of being a like-minded pro-
 
 ### Changes in sentiment strengths in each subreddit 
 ------
-**Run [comment_sentiment.ipynb](https://github.com/macs30200-s22/replication-materials-fiofiofiona/blob/master/comment_sentiment.ipynb)**\
+**Run [comment_sentiment.ipynb](https://github.com/fiofiofiona/Research-attitude-changes-in-discussion-threads/blob/master/comment_sentiment.ipynb)**\
 To conduct sentiment analysis on comments, run the above notebook to generate sentiment scores from TextBlob and go through statistical analysis. Note that the data folders and .jar file that support running [SentiStrength](http://sentistrength.wlv.ac.uk/) are authorized by the author, Dr. Thelwall, and therefore should not be uploaded for public access. Comments with sentiment scores can be provided upon request.\
 After assessing sentiment strengths of all comments, changes were measured along two axes: temporal change and variability. Temporal change was calculated from `final 10% comments' sentiment strengths - final 10% comments' sentiment strengths` in a discussion thread sorted by chronological order; variability was calculated from `|minimum 10% comments' sentiment strengths - maximum 10% comments' sentiment strengths|` in a discussion thread sorted by individual sentiment strength scores. The distributions of changes in sentiment strenths were similar across three subreddits, as shown below. 
 
@@ -50,4 +50,4 @@ The following bar chart shows the top 20 bigram frequency from the comments with
 
 \
 **Cite as:**\
-Lee, F. Changes of sentiment strength and subjectivity in COVID-19 vaccine discourse on Reddit, (2022), GitHub repository, https://github.com/macs30200-s22/replication-materials-fiofiofiona
+Lee, F. Changes of sentiment strength and subjectivity in COVID-19 vaccine discourse on Reddit, (2022), GitHub repository, https://github.com/fiofiofiona/Research-attitude-changes-in-discussion-threads
